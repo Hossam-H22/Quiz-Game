@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.ico" />
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Quiz Game</title>
+</head>
+<body>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 col-md-7 col-11 appQuiz">
+                <div class="row title-bar custom-border">
+                    <h1 class="col-md-6">Quiz Game</h1>
+                    <div class="col-md-6 ">
+                        <div class="d-flex justify-content-end">
+                            <span id="timer" class="d-inline-block fs-3"></span>
+                        </div>
+                        <div id="progress-bar-container" class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%; background-color: #176B87;" id="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <img class="img w-50" src="assets/HomePage.svg" alt="">
+                </div>
+                <div class="row">
+                    <div class="quiz pl-5">
+                        <h2 id="question" class="d-flex">
+                            Choose your level
+                        </h2>
+                        <div id="answer-buttons" class="levels">
+                            <button class="btn-level fw-semibold">Easy</button>
+                            <button class="btn-level fw-semibold">Medium</button>
+                            <button class="btn-level fw-semibold">Hard</button>
+                        </div>
+                        <button id="next-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+<script src="JS/bootstrap.js"></script>
+<script src="JS/script.js"></script>
+</html>
