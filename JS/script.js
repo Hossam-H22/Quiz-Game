@@ -10,7 +10,9 @@ const titleElement = document.querySelector('.appQuiz h1')
 const imgElement = document.querySelector('.img')
 const homeImgPath = 'assets/quiz show.svg'
 const timeOutImgPath = 'assets/time-out.svg'
-const resultImgPath = 'assets/Result.svg'
+const goodResultImgPath = 'assets/Studet Good.svg'
+const failResultImgPath = 'assets/Studet Fail.svg'
+
 
 
 let questions = []
@@ -111,7 +113,7 @@ function showScore() {
     timerElement.innerHTML = "";
     titleBarElement.classList.add('custom-border');
     titleElement.classList.remove('custom-border');
-    imgElement.src = resultImgPath
+    imgElement.src = (score >= numberOfQuestion/2)? goodResultImgPath : failResultImgPath;
     questionElement.innerHTML = `You scored ${score} out of ${numberOfQuestion}!`;
     questionElement.classList.add('justify-content-center');
     nextButton.innerHTML = 'Play Again';
@@ -198,16 +200,16 @@ function homePage() {
 function chooseLevel(e) {
     const selectedBtn = e.target;
     if (selectedBtn.innerHTML == "Easy") {
-        numberOfQuestion = 5
-        minutes = 7
-    }
-    else if (selectedBtn.innerHTML == "Medium") {
-        numberOfQuestion = 10
+        numberOfQuestion = 6
         minutes = 10
     }
-    else {
-        numberOfQuestion = 15
+    else if (selectedBtn.innerHTML == "Medium") {
+        numberOfQuestion = 12
         minutes = 12
+    }
+    else {
+        numberOfQuestion = 18
+        minutes = 16
     }
     startQuiz();
 }
