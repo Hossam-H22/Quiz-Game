@@ -8,6 +8,10 @@
 
 <br>
 
+![image](https://github.com/Dragon-H22/Quiz-Game/assets/88390970/33039238-1ba3-4422-8bff-58557465e0e7)
+
+<br>
+
 ![image](https://github.com/Dragon-H22/Quiz-Game/assets/88390970/598e916d-4914-4885-987f-ff927413519a)
 
 <br>
