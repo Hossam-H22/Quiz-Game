@@ -48,6 +48,7 @@ function startQuiz() {
     titleElement.classList.add('custom-border');
     imgElement.classList.remove('w-100');
     imgElement.src ='';
+    imgElement.style.display ='none';
     timer();
     showQuestion();
 }
@@ -113,6 +114,7 @@ function showScore() {
     timerElement.innerHTML = "";
     titleBarElement.classList.add('custom-border');
     titleElement.classList.remove('custom-border');
+    imgElement.style.display = 'block'
     imgElement.src = (score >= numberOfQuestion/2)? goodResultImgPath : failResultImgPath;
     questionElement.innerHTML = `You scored ${score} out of ${numberOfQuestion}!`;
     questionElement.classList.add('justify-content-center');
@@ -151,6 +153,7 @@ function timer() {
             nextButton.style.display = 'none';
             questionElement.innerHTML = '';
             timerElement.innerHTML = "Timer expired!";
+            imgElement.style.display = 'block';
             imgElement.src = timeOutImgPath;
             timeOut();
         }
@@ -167,6 +170,7 @@ function timeOut() {
             nextButton.style.display = 'block';
             questionElement.innerHTML = `You scored ${score} out of ${numberOfQuestion}!`;
             timerElement.innerHTML = "";
+            imgElement.style.display = 'none';
             imgElement.src ='';
         }
     }, 1000);
@@ -183,10 +187,11 @@ nextButton.addEventListener('click', () => {
 
 function homePage() {
     resetState();
+    imgElement.style.display = 'block';
     imgElement.src = homeImgPath;
+    imgElement.classList.add('w-100');
     questionElement.innerHTML = '';
     questionElement.classList.remove('justify-content-center');
-    imgElement.classList.add('w-100');
     answerButtons.classList.add('levels');
     const levelsButtons = `<button class="btn-level fw-semibold">Easy</button>
                             <button class="btn-level fw-semibold">Medium</button>
