@@ -30,6 +30,10 @@ The Quiz Game project is an interactive and engaging application designed to pro
 
 <br>
 
+![image](https://github.com/Dragon-H22/Quiz-Game/assets/88390970/6cb21f71-f4e6-4859-b62b-52175b59ad7f)
+
+<br>
+
 ![image](https://github.com/Dragon-H22/Quiz-Game/assets/88390970/598e916d-4914-4885-987f-ff927413519a)
 
 <br>
