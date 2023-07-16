@@ -1,6 +1,24 @@
 # Quiz-Game
 
-> https://dragon-h22.github.io/Quiz-Game/
+<br>
+
+> ## Description
+The Quiz Game project is an interactive and engaging application designed to provide users with an enjoyable and educational quiz experience. This project aims to create a platform where users can test their knowledge in various subjects while having fun. *<a href="https://dragon-h22.github.io/Quiz-Game/" target="_blank"> Check it now⚡</a>*
+
+
+<br><br>
+
+> ## Developed By
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+
+
+
+<br><br>
+
+> ## Sample Photos 
 
 <br>
 
